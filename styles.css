@@ -1,0 +1,45 @@
+:root { --text:#01140c; --background:#f1fff9; --primary:#07f892; --secondary:#8de8c5; --accent:#4565fa; --muted:#557267; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--text); background:var(--background); font-family:"DM Sans",sans-serif; }
+a { color:inherit; text-decoration:none; }
+h1,h2,h3,p { margin-top:0; }
+h1,h2,h3 { font-family:"Space Grotesk",sans-serif; }
+.site-header,.hero,.explore,.site-footer { max-width:1240px; margin:auto; }
+.site-header { padding:26px 32px; display:flex; align-items:center; justify-content:space-between; gap:28px; }
+.brand { font-family:"Space Grotesk",sans-serif; font-size:1.15rem; font-weight:700; }
+.site-nav { display:flex; gap:30px; margin-left:auto; color:var(--muted); font-size:.88rem; }
+.site-nav a { padding:8px 0; border-bottom:2px solid transparent; }
+.site-nav a:hover,.site-nav a.active { color:var(--text); border-color:var(--primary); }
+.header-action { border:1px solid var(--text); border-radius:999px; padding:11px 16px; font-size:.82rem; font-weight:600; }
+.hero { position:relative; isolation:isolate; padding:70px 32px 96px; min-height:430px; display:grid; align-items:center; 
+    background:url("index image2.jpg") center/cover; }
+.hero:before { content:""; position:absolute; z-index:-1; inset:0; background:rgba(241,255,249,.84); }
+.hero-copy { max-width:640px; }
+h1 { margin-bottom:22px; font-size:clamp(3.3rem,6.2vw,5.8rem); line-height:.95; letter-spacing:-.06em; }
+.hero-intro { max-width:420px; color:var(--muted); font-size:1.08rem; line-height:1.6; }
+.explore { padding:110px 32px 130px; }
+.guide-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.guide-card { min-height:300px; padding:25px; display:flex; flex-direction:column; justify-content:end; border:1px solid var(--text); }
+.guide-budget { background:var(--primary); }
+.guide-debt { background:var(--secondary); }
+.guide-investing { color:var(--text); background:var(--accent); }
+.guide-card h3 { margin:0 0 9px; font-size:1.8rem; }
+.guide-card p { max-width:240px; margin:0; font-size:.85rem; line-height:1.45; }
+.check-in { padding:92px max(32px,calc((100vw - 1176px)/2)); display:grid; grid-template-columns:.9fr 1.1fr; gap:90px; color:var(--background); background:var(--text); }
+.check-in h2 { margin:0; font-size:clamp(2.35rem,4vw,4rem); }
+.site-footer { padding:25px 32px; display:flex; justify-content:space-between; gap:20px; color:var(--muted); font-size:.72rem; }
+.site-footer p { margin:0; }
+@media (max-width:760px) {
+  .site-header { flex-wrap:wrap; padding:20px; }
+  .site-nav { order:3; width:100%; justify-content:space-between; gap:8px; margin:5px 0 0; }
+  .site-nav a { font-size:.75rem; }
+  .header-action { padding:9px 12px; font-size:.72rem; }
+  .hero { padding:55px 20px 80px; }
+  .explore { padding:80px 20px 90px; }
+  .guide-grid,.check-in { grid-template-columns:1fr; }
+  .guide-card { min-height:230px; }
+  .check-in { padding:75px 20px; gap:45px; }
+  .site-footer { padding:22px 20px; flex-wrap:wrap; }
+  .site-footer p:last-child { width:100%; }
+}
