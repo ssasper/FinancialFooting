@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Financial Footing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Financial Footing home">
+      <span>FINANCIAL FOOTING</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="budget.html">BUDGET</a>
+      <a href="debt.html">DEBT</a>
+      <a href="investing.html">INVESTING</a>
+    </nav>
+    <a class="header-action active" href="contact.html">CONTACT US</a>
+  </header>
+
+  <main>
+    <section class="explore contact">
+      <h1>Contact Us</h1>
+      <p>Call us: (555) 555-5555 or send us a message below.</p>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option>Budget</option>
+          <option>Debt</option>
+          <option>Investing</option>
+          <option>Other</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Financial Footing | Get back on your financial feet</p><p>Contact us: (555) 555-5555</p><p>© 2026 Financial Footing. All rights reserved.</p></footer>
+</body>
+</html>

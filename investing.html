@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investing | Financial Footing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="investing-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Financial Footing home">
+      <span>FINANCIAL FOOTING</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="budget.html">BUDGET</a>
+      <a href="debt.html">DEBT</a>
+      <a class="active" href="investing.html">INVESTING</a>
+    </nav>
+    <a class="header-action" href="contact.html">CONTACT US</a>
+  </header>
+
+  <main>
+    <section class="explore investing">
+      <div class="investing-top">
+        <div class="investing-top-text">
+          <h1>Investing</h1>
+      <p class="page-intro">Where you put your money changes how fast it grows. This table shows what <strong>$100 invested every 14 days</strong> could be worth over time in different types of investments, using an assumed yearly return for each one. The more time your money has, the more the growth adds up.</p>
+        </div>
+        <video class="investing-video" controls preload="metadata" playsinline aria-label="Investing video">
+          <source src="investment-video.webm" type="video/webm">
+          <source src="investment-video.mp4" type="video/mp4">
+          Your browser can't play this video.
+        </video>
+      </div>
+      <div class="table-scroll">
+        <table class="data-table invest-table">
+          <caption class="visually-hidden">Projected value of $100 invested every 14 days, by investment type</caption>
+          <thead>
+            <tr><th scope="col">Investment</th><th scope="col">Assumed yearly return</th><th scope="col">After 5 years</th><th scope="col">After 10 years</th><th scope="col">After 20 years</th><th scope="col">After 30 years</th><th scope="col">Good to know</th></tr>
+          </thead>
+          <tbody>
+          <tr class="total"><th scope="row">Total you put in</th><td>&ndash;</td><td class="money">$13,000</td><td class="money">$26,000</td><td class="money">$52,100</td><td class="money">$78,200</td><td class="notes">What you contribute, with no growth.</td></tr>
+          <tr class="tier-safe"><th scope="row">Certificate of deposit (CD)</th><td>4.5%</td><td class="money">$14,549</td><td class="money">$32,669</td><td class="money">$83,584</td><td class="money">$162,690</td><td class="notes">Fixed rate, FDIC-insured. Early withdrawal usually costs a penalty.</td></tr>
+          <tr class="tier-safe"><th scope="row">High-yield savings account</th><td>4.0%</td><td class="money">$14,369</td><td class="money">$31,842</td><td class="money">$79,144</td><td class="money">$149,193</td><td class="notes">FDIC-insured and easy to access. The rate can change at any time.</td></tr>
+          <tr class="tier-safe"><th scope="row">Bonds / bond fund</th><td>4.5%</td><td class="money">$14,549</td><td class="money">$32,669</td><td class="money">$83,584</td><td class="money">$162,690</td><td class="notes">Lower risk than stocks, but value can rise and fall with interest rates.</td></tr>
+          <tr class="tier-retire"><th scope="row">Roth IRA</th><td>7.0%</td><td class="money">$15,482</td><td class="money">$37,176</td><td class="money">$110,557</td><td class="money">$255,017</td><td class="notes">After-tax contributions; qualified withdrawals are tax-free. Income and yearly contribution limits apply.</td></tr>
+          <tr class="tier-retire"><th scope="row">401(k) (traditional)</th><td>7.0%</td><td class="money">$15,482</td><td class="money">$37,176</td><td class="money">$110,557</td><td class="money">$255,017</td><td class="notes">Pre-tax contributions through an employer. An employer match is free money. Taxed when withdrawn.</td></tr>
+          <tr class="tier-stock"><th scope="row">Stock index fund (taxable account)</th><td>7.0%</td><td class="money">$15,482</td><td class="money">$37,176</td><td class="money">$110,557</td><td class="money">$255,017</td><td class="notes">No contribution limit or tax advantage. Value can swing a lot in the short term.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="legend"><span class="swatch tier-safe"></span>Lower risk <span class="swatch tier-retire"></span>Retirement accounts <span class="swatch tier-stock"></span>Stock market</p>
+      <p class="disclaimer">These are estimates, not promises. Returns are assumed to stay the same every year and compound over time, and each deposit is made at the start of its period. Taxes, fees and inflation are not included. Stock-based investments can lose value. Contribution limits and tax rules change, so check current IRS rules or talk to a financial professional.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Financial Footing | Get back on your financial feet</p><p>Contact us: (555) 555-5555</p><p>© 2026 Financial Footing. All rights reserved.</p></footer>
+</body>
+</html>

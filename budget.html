@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget | Financial Footing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="budget-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Financial Footing home">
+      <span>FINANCIAL FOOTING</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a class="active" href="budget.html">BUDGET</a>
+      <a href="debt.html">DEBT</a>
+      <a href="investing.html">INVESTING</a>
+    </nav>
+    <a class="header-action" href="contact.html">CONTACT US</a>
+  </header>
+
+  <main>
+    <section class="explore budget">
+      <h1>Budget</h1>
+      <p class="page-intro">A budget shows where your money comes from and where it goes each month. Enter your monthly income and expenses below, add up each section, then subtract your total expenses from your total income to see how much you have left over.</p>
+      <table class="data-table budget-table">
+        <caption class="visually-hidden">Personal monthly budget</caption>
+        <thead>
+          <tr><th scope="col">Category</th><th scope="col">Monthly amount ($)</th></tr>
+        </thead>
+        <tbody>
+          <tr class="group"><th colspan="2" scope="colgroup">Income</th></tr>
+          <tr><th scope="row"><label for="income-1">Paycheck / salary</label></th><td><input type="number" id="income-1" class="income" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr><th scope="row"><label for="income-2">Side income</label></th><td><input type="number" id="income-2" class="income" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr><th scope="row"><label for="income-3">Other income</label></th><td><input type="number" id="income-3" class="income" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr class="total"><th scope="row">Total income</th><td><input type="number" step="0.01" placeholder="0.00" inputmode="decimal" aria-label="Total income"></td></tr>
+        </tbody>
+        <tbody>
+          <tr class="group"><th colspan="2" scope="colgroup">Expenses</th></tr>
+          <tr><th scope="row"><label for="expense-1">Housing (rent / mortgage)</label></th><td><input type="number" id="expense-1" class="expense" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr><th scope="row"><label for="expense-2">Utilities</label></th><td><input type="number" id="expense-2" class="expense" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr><th scope="row"><label for="expense-3">Groceries</label></th><td><input type="number" id="expense-3" class="expense" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr><th scope="row"><label for="expense-4">Transportation</label></th><td><input type="number" id="expense-4" class="expense" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr><th scope="row"><label for="expense-5">Insurance</label></th><td><input type="number" id="expense-5" class="expense" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr><th scope="row"><label for="expense-6">Debt payments</label></th><td><input type="number" id="expense-6" class="expense" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr><th scope="row"><label for="expense-7">Savings</label></th><td><input type="number" id="expense-7" class="expense" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr><th scope="row"><label for="expense-8">Entertainment</label></th><td><input type="number" id="expense-8" class="expense" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr><th scope="row"><label for="expense-9">Other expenses</label></th><td><input type="number" id="expense-9" class="expense" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></td></tr>
+          <tr class="total"><th scope="row">Total expenses</th><td><input type="number" step="0.01" placeholder="0.00" inputmode="decimal" aria-label="Total expenses"></td></tr>
+        </tbody>
+        <tfoot>
+          <tr class="remaining"><th scope="row">Money left over</th><td><input type="number" step="0.01" placeholder="0.00" inputmode="decimal" aria-label="Money left over"></td></tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Financial Footing | Get back on your financial feet</p><p>Contact us: (555) 555-5555</p><p>© 2026 Financial Footing. All rights reserved.</p></footer>
+</body>
+</html>
