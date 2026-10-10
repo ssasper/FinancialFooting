@@ -283,6 +283,7 @@ h1 {
 
 .budget-table {
   max-width: 640px;
+  margin-inline: auto;
 }
 
 .data-table th,
